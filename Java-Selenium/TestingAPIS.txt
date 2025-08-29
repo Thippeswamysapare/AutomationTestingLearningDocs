@@ -1,0 +1,159 @@
+https://restful-booker.herokuapp.com/apidoc/index.html
+
+------------------------------------------------------------------------------
+Get Token
+https://restful-booker.herokuapp.com/auth
+
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+Response
+{
+    "token": "64ec48eda8b268e"
+}
+
+------------------------------------------------------------------------------
+GET Booking Id by Id 
+https://restful-booker.herokuapp.com/booking/:id
+
+https://restful-booker.herokuapp.com/booking/1
+https://restful-booker.herokuapp.com/booking/627
+
+
+Response:
+[
+  {
+    "bookingid": 1
+  },
+  {
+    "bookingid": 2
+  },
+  {
+    "bookingid": 3
+  },
+  {
+    "bookingid": 4
+  }
+]
+
+------------------------------------------------------------------------------
+POST:
+
+https://restful-booker.herokuapp.com/booking
+{
+    "firstname" : "Jim",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}
+
+header: Content-Type   String
+Accept  String
+
+Response:
+{
+    "bookingid": 1,
+    "booking": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+
+------------------------------------------------------------------------------
+PUT: Update Booking
+https://restful-booker.herokuapp.com/booking/:id
+https://restful-booker.herokuapp.com/booking/1
+
+{
+    "firstname" : "James",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}
+header: Content-Type   String
+Accept  String
+Cookie : token=<token_value>
+Authorization: Basic
+
+Response: 
+HTTP/1.1 200 OK
+
+{
+    "firstname" : "James",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}
+
+------------------------------------------------------------------------------
+Booking - PartialUpdateBooking
+
+PATCH:
+https://restful-booker.herokuapp.com/booking/:id
+{
+    "firstname" : "James",
+    "lastname" : "Brown"
+}
+header:
+Content-Type   String
+Accept  String
+Cookie string   Default value: -->  Sets an authorization token to access the PUT endpoint, can be used as an alternative to the Authorization
+
+									Default value: token=<token_value>
+ 
+Authorization string  : --> YWRtaW46cGFzc3dvcmQxMjM=] Basic authorization header to access the PUT endpoint, can be used as an alternative to the Cookie header
+							Default value: Basic
+							
+Response: 
+{
+    "firstname" : "James",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}
+
+
+------------------------------------------------------------------------------
+DELETE
+https://restful-booker.herokuapp.com/booking/1
+Deletes a booking from the API. Requires an authorization token to be set in the header or a Basic auth header.
+Cookie string
+Authorizationoptional  string
+
+Response : HTTP/1.1 201 Created
+
+------------------------------------------------------------------------------
+Ping - HealthCheck
+
+GET: https://restful-booker.herokuapp.com/ping
+Response :  HTTP/1.1 201 Created

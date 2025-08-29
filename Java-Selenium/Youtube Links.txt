@@ -1,0 +1,17 @@
+Java Script
+
+https://www.youtube.com/watch?v=J65D347sk2M
+
+
+Cross Browser testing:
+https://www.youtube.com/watch?v=z3Ruc2bKnqI
+
+
+Playwright with JS
+
+https://www.youtube.com/watch?v=zF3ftXEj5Aw&list=PL6flErFppaj0iQG2_Dd72Jz0bfrzZwMZH
+https://www.youtube.com/watch?v=yOuElUSfAs8&list=PLUDwpEzHYYLsw33jpra65LIvX1nKWpp7-
+
+
+https://one.techademy.com/main/Mindtree
+sapare.thippeswamy@ltimindtree.com  / R@cclive2024

@@ -1,0 +1,95 @@
+1. Create NUnit test framework and configure selenium dependencies
+
+2. Create base parent test calss for common functionalities
+
+3. Build browser start up method with Factory patteren implementations
+
+4. Configure global variables in C# Framework with configure Manager
+
+5. 
+
+
+dotnet test .\CSharpLearning.csproj --filter TestCategory=Login
+dotnet test .\CSharpLearning.csproj --filter TestCategory=Smoke
+dotnet test .\CSharpLearning.csproj --filter TestCategory=Regression
+
+dotnet test .\CSharpLearning.csproj --filter TestCategory=Smoke -- "TestRunParameters.Parameter(name=\"browserName\",value=\"firefox\")"
+
+dotnet test .\CSharpLearning.csproj --filter TestCategory=Smoke -- TestRunParameters.Parameter\(name=\"browserName\", value=\"firefox\"\)
+
+dotnet test .\CSharpLearning.csproj --filter TestCategory=Smoke --TestRunParameters.Parameter(name=\"browserName\", value=\"firefox\")
+
+TestRunParameters.Parameter\(name=\"browserName\", value=\"firefox\"\)
+
+Sub Practice	WFM POC	COE POC
+Automation Sub Practice	Vikas (10732737)	Guru (61007164)
+Performance Sub Practice	Vikas (10732737)	Krishna (61087332)
+Digital Sub Practice	Benny (10744015)	Rajendra (10826421)
+Data Sub Practice	Benny (10744015)	Nagendra (61048287)
+Enterprise Sub Practice	Benny (10744015)	Vikash (61057186)
+Functional Sub Practice	Benny (10744015)	 
+Supply lead	Rajesh (61069915)	 
+WFM TT Lead	Seema (61020612)	 
+
+Automation Sub Practice	Vikas (10732737)	Guru (61007164)
+Functional Sub Practice	Benny (10744015)	 
+
+https://www.programiz.com/java-programming/online-compiler/
+https://www.w3schools.com/sql/sql_and.asp
+
+===========https://javaconceptoftheday.com/java-interview-programs-on-strings/ =======
+Write a Java program to find the duplicate words and their number of occurrences in a string?
+Write a Java program to count the number of words in a string?
+Write a Java program to count the total number of occurrences of a given character in a string without using any loop?
+Write a Java program to reverse a string?
+Ex: String s = "Java is java again java again";
+Write a Java program to reverse a string?
+
+Write a Java program to count the number of occurrences of each character in a string?
+Ex: Java J2EE Java JSP J2EE
+Write a Java program to remove all white spaces from a string
+Write a Java program to find duplicate characters in a string
+Write a Java program to check whether one string is a rotation of another
+Ex: JavaJ2eeStrutsHibernate
+Result: “StrutsHibernateJavaJ2ee”, “J2eeStrutsHibernateJava”, “HibernateJavaJ2eeStruts”.
+Write a Java program to check whether two strings are anagram or not?
+
+Write a Java program to reverse a given string with preserving the position of spaces?
+Ex: “I Am Not String"
+Result: “g ni rtS toNmAI”
+
+Write a Java program to reverse each word of a given string
+Ex: 
+Java Concept Of The Day
+Result:
+avaJ tpecnoC fO ehT yaD
+How do you convert string to integer and integer to string in Java
+
+Write a Java program to find the percentage of uppercase letters, lowercase letters, digits and special characters in a given string?
+For example, in “Tiger Runs @ The Speed Of 100 km/hour.”,
+
+Number of uppercase letters is 5. So percentage is 13.16%
+Number of lowercase letters is 20. So percentage is 52.63%
+Number of digits is 3. So percentage is 7.89%
+Number of other characters is 10. So percentage is 26.32%
+Write a Java program to prove that strings are immutable in Java
+How do you find longest substring without repeating characters in the given string?
+
+How do you swap two string variables without using third or temp variable in Java?
+Write a Java program to find all permutations of a string
+How do you find first repeated and non-repeated character in the given string in Java
+Write a Java program to append a given string to a text file?
+How do you find the number of characters, words and lines in the given text file in Java
+
+How do you find the most repeated word in a text file in Java
+How to sort a text file in Java
+Palindrome Programs In Java
+How to reverse a sentence word by word in Java?
+How to remove all vowels from a string in Java
+How to replace a specific string in a text file
+Java program to print all sub strings of a string.
+Java program to print common characters between two strings in alphabetical order. 
+Most repetitive character in a string
+
+
+https://www.geeksforgeeks.org/dsa/top-50-string-coding-problems-for-interviews/

@@ -1,0 +1,62 @@
+I would like to say thank you for giving this oppertunity
+
+I have an experience of 12 + years in funtional testing of web application, api testing with postman,database testing with SQL Server and Postgre DB.
+
+Till now I have handled 5 projects , out of 5  , 2 from Revenue dept , 3 from Philips.
+I have worked for govt projects and health care domain.
+
+I have worked with Azile methodology which is having 2weeks for a sprint.
+
+
+Here in Philips I am workign since 2019 Jul
+
+I have experience in  writing detailed test cases based in the requriments and 
+executing functional and regression testing, creating traceability matrices, and reporting bugs using tools like JIRA and Bugzilla.”
+ 
+I worked with Philips since 2019 starting as test automation enginerr with PNDT project
+Then I was worked as test automation engineer with AED Modeling web application. 
+
+Here I had gained hands-on automation executing until the projects were discontinued due to COVID
+ 
+
+Then I joined ROCC (Radiology operations command center ) in Jun 2020 as Manual tester for Serviceability team
+where i expose my testing skills in Fresh application installation , upgrade the application from one to another version,
+
+ 
+Then I  moved to function testing squads where I have involved in end to end ROCC functional  testing 
+which involved hardware setup and application setup. 
+
+---------------- 
+Here I had played am important role i.e  'Lab in-charge' for ROCC where I had taken care of Lap setup, maintainaing lab assets,
+preprating lap asset docuemnt and tracing of assets.
+
+Also I have involved in Lab Audits.
+ 
+I played a vital  role in shifting the Lab from Philips Manyata tech park to Yelahanka office.
+When ROCC lab is shifing from old office to new office I am the SPOC person.
+I have coordinated with IT team, network team , FM team and Security team in lab movement.
+As a lab incharge I did tagging with assets, asset maintainance and coordinating with Dev and Testing team.
+ 
+I did the Set up and configure workstations in new lap which is required from ROCC functionality.
+ 
+----------------
+
+Coming to ROCC functional tested I had tested Login functionality with Single sign on feature sing Azure, Google and Okta IDP providers.
+ 
+ 
+I suppored devops team , as part of tester I did console application deployement in testing VMs.
+Devops involement :
+COnsoel application deployement in testing VMs and share the details with Testing team.
+As part of devops activity  I performed backup and restore activity quarterly
+ 
+ 
+Handle Redis and Vault udpated using postman tool.
+ 
+I have involved in production support and  cooridinating with FSE team for thier support with respect to installation and application support.
+ 
+Coordinating with developement team for production deffects.
+ 
+ 
+-------------  IBE -------------
+ 
+Working as functional tester with IBE application.

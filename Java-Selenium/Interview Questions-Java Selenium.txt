@@ -1,0 +1,123 @@
+Excel read
+
+Excel write
+
+multi select dropdown value select: 
+						WebElement dropdown=driver.findElement(By.xpath(""));
+						Select select= new Select(driver);
+						if(select.isMultiple)
+						{
+							select.selectByVisibleText("Banane");
+							select.selectByVisibleText("Apple");
+							select.selectByValue("Cherry);
+						}
+						else
+						{
+						s.o.p("Dropdowb does not support multiple selection")
+						}
+
+Calendar component:
+			Use Siblings, ancestors, preceding-sibling, following-sibling
+
+			//h2[text()='RCB']/ancestor::td/following-sibling::td[8]
+			//h2[text()='RCB']/ancestor::td/following-sibling::td[9]
+			//h2[text()='SRH']/ancestor::td/following-sibling::td[9]/div/span[5]
+			//h2[text()='SRH']/ancestor::td/preceding-sibling::td
+			//h2[text()='SRH']/ancestor::td/preceding-sibling::td[2]
+
+
+Data provider, Parameterization
+
+Git comments(Git clone, git pull, git checkbout -b , git checkout, git add git commit git push)
+
+why window handling return type as set of string,why not set of list:
+		(Uniqueness of Window Handles,No Guaranteed Order,Performance Consideration)
+
+drag drop using xy coordinates`(Actions class, actions.clickAndHold(draggable).moveByOffset(100,50).release().perform())
+
+listensers
+
+Dynamic web element handle
+
+Frames ways to switch ( driver.switchTo().Frame(0), Frame(frame-name), Frame(element-name), switchTo().defaultContent() )
+
+screenshot for element 
+
+horizontal, vertical scroll (Vertical JavascriptExecutor js.executeScript("windows.scrollBy(0,500))  scroll Down
+							(Vertical JavascriptExecutor js.executeScript("windows.scrollBy(0,-500)) scroll Up
+							(Horizontal JavascriptExecutor js.executeScript("windows.scrollBy(500,0)) scroll Down
+							(Horizontal JavascriptExecutor js.executeScript("windows.scrollBy(-500,0)) scroll Down
+
+zoom in,zoom out (Zoom in  js.executeScript("document.body.style.zoom='150%'"))
+				 (Zoom out  js.executeScript("document.body.style.zoom='75%'"))
+				 (Reset Zoom to 100%  js.executeScript("document.body.style.zoom='100%'"))
+
+oops concepts with framework apply: 
+
+Encrypt, decrypt password apply for login -base64 solution
+
+file upload without send keys(JavascriptExecutor , AutoIT , Using Robot class)
+
+pojo class
+
+screenshot for entire page(Using Ashot library, Screenshot screenshot=new Ashot().shootingStrategy(ShootingStrategies.
+							viewPortPasting(1000)).takeScreenshot(driver)
+							
+							
+Find element using logical Operators
+<p class="error-message ng-grouping" ng-show="showMessage()" style="" xpath="1">Invalid credentials!</p>
+
+//p[text()='Invalid' or text()='credentials!']
+
+<input id="username" name="username" autocapitalize="off" ng-keypress="c.message = ''" ng-click="c.message = ''" 
+class="form-control no-border input-advanced ng-pristine ng-valid ng-empty ng-touched" type="text" 
+placeholder="Enter Business Email" autofocus="true" ng-model="c.username" role="textbox" style="">
+
+//input[@role='textbox' and @placeholder='Enter Business Email']
+//input[@id='password' or @name='password']
+//input[@id='password' or @placeholder='Enter Password']
+//button[@type='submit' and text()=' Login ']
+
+//*[not(@disabled)] --> This finds all elements that are not disabled.
+
+
+TestNG Annotations:
+Annotation	Purpose
+@BeforeSuite	Runs once before all tests in the suite.
+@AfterSuite	Runs once after all tests in the suite.
+@BeforeTest	Runs before any test method in the <test> tag.
+@AfterTest	Runs after all test methods in the <test> tag.
+@BeforeGroups	Runs before the first test method in specified groups.
+@AfterGroups	Runs after the last test method in specified groups.
+@BeforeClass	Runs once before the first method in the current class.
+@AfterClass	Runs once after all methods in the current class.
+@BeforeMethod	Runs before each test method.
+@AfterMethod	Runs after each test method.
+@Test	Marks a method as a test case.
+@DataProvider	Supplies data to a test method.
+@Parameters	Passes parameters from testng.xml to test methods.
+@Listeners	Registers custom listeners for logging, reporting, etc.
+
+
+Using Groups as Tags -->  @Test(groups = {"smoke", "regression"})
+Custom Tags via Attributes -->  @Test(description = "Login test", priority = 1)
+
+priority default is 0 --> By default, TestNG assigns a priority of 0 to all test methods
+						In TestNG, the priority attribute within the @Test annotation is used to control the order of test execution
+
+@Test(priority = 1)
+
+Skip Test Execution in TestNG --> Using enabled = false   @Test(enabled = false)
+
+Parallel Execution ---> 
+
+		<suite name="ParallelSuite" parallel="methods" thread-count="3">
+		<test name="ParallelTest">
+			<classes>
+			<class name="com.example.tests.TestClass"/>
+			</classes>
+			</test>
+		</suite>
+
+
+
